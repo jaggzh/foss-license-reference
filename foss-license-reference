@@ -299,6 +299,8 @@ print $tb->body,  "\n";
 print "Use: '" . colored("$ourname -r NAME", 'cyan') . "' to download one and save as LICENSE.\n";
 print " Ex: '" . colored("$ourname -r GPL-3.0", 'cyan') . "'\n";
 print "     -h for help, --verify to check mirror availability\n";
+print colored("WARNING:", 'bold yellow'), " The features of the licenses was gathered and classified by an LLM.\n";
+print colored("         Verification would be appreciated by the community.\n", 'bold yellow');
 
 sub cols_to_2col {
     map {
