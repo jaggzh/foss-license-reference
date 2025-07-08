@@ -106,9 +106,7 @@ bash -c execution of python loop of 1000000 Hello Worlds : **0.18**
 ```
 
 From:
-[benchmark-perl-python
-https://gist.github.com/jaggzh/4f4159b1b137cbc9553efb7d8364f0c9
-] (https://gist.github.com/jaggzh/4f4159b1b137cbc9553efb7d8364f0c9)
+[benchmark-perl-python https://gist.github.com/jaggzh/4f4159b1b137cbc9553efb7d8364f0c9] (https://gist.github.com/jaggzh/4f4159b1b137cbc9553efb7d8364f0c9)
 
 ---
 
