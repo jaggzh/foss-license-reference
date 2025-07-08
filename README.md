@@ -2,7 +2,7 @@
 
 *Because choosing a software license shouldn't require a law degree.*
 
-A Perl-powered license comparison matrix that actually works when gpl.org inevitably goes down again.
+A Perl-powered license comparison matrix that still works even when gpl.org goes down again. :(
 
 ## What it does
 
