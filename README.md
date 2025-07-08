@@ -45,15 +45,13 @@ You can `--verify` the included URLs' as well (see screenshot of that below)
 ## Why this exists
 
 1. License comparison charts on the web are either wrong, incomplete, or hosted on someone's Geocities page
-2. gpl.org has a habit of going offline at inconvenient moments
-3. Sometimes you just want to grab the actual license text without clicking through 47 "I Accept" dialogs
+2. Really.. you just want to get on with your project.
 
 ## Features
 
 - **Fallback mirrors**: SPDX GitHub → CDN → Original sources (in that order of reliability)
 - **Timeout handling**: 5-second curl timeouts because life's too short
-- **Case-insensitive lookups**: `mit` = `MIT` = `MiT` (we're not barbarians)
-- **Verbose mode**: For when you want to see the sausage being made
+- **Verbose mode**: Quickly see what the License terms mean
 
 <div align="center">
   <em>Verify License URLs</em><br>
@@ -63,7 +61,7 @@ You can `--verify` the included URLs' as well (see screenshot of that below)
 ## Options
 
 ```
--r, --retrieve LICENSE_ID    Download license text as 'LICENSE'
+-r, --retrieve LICENSE_ID   Download license text as 'LICENSE'
 -v                          Verbose (add more v's for more verbosity)
 -l, --long                  Show extended columns
 --verify                    Check if mirrors are alive
@@ -95,6 +93,25 @@ Use `-v` to see the full legend, because memorizing 17 abbreviations is nobody's
 
 Sometimes the old ways are the best ways. Also, this started as a quick script and then grew a personality.
 
+Honestly, though, while the learning curve is insane, nothing really beat's perl's convenience and dev speed (primarily when whipping up text utilities).
+
+Python's also slow... yuck.
+
+```
+bash -c loop, of 1000 executions, of perl Hello World : **8.11**
+bash -c loop, of 1000 executions, of python Hello World : **18.05**
+
+bash -c execution of perl loop of 1000000 Hello Worlds : **0.06**
+bash -c execution of python loop of 1000000 Hello Worlds : **0.18**
+```
+
+From:
+[benchmark-perl-python
+https://gist.github.com/jaggzh/4f4159b1b137cbc9553efb7d8364f0c9
+] (https://gist.github.com/jaggzh/4f4159b1b137cbc9553efb7d8364f0c9)
+
 ---
 
-*When in doubt, choose MIT. When you want to stick it to proprietary software, choose GPL. When you've given up on life, choose WTFPL.*
+*Idea: When in doubt, choose MIT. When you want to stick it to
+proprietary software, choose GPL. When you've given up on life,
+choose WTFPL.*
